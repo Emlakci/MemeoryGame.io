@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+body{
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#displayArea{  
+    background-color: rgba(0, 0, 0, 0.24);
+    min-width: 450px;
+    max-width: 100%;
+    min-height: 80px;
+    height: auto;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin: 1rem 5% 1rem 5%;
+    align-content: center;
+    align-items: center;
+}
+p h2 {
+    display: inline;
+}
+h2:hover{
+    color: red;
+    cursor:crosshair;
+}
+.input{
+    max-width: 150px;
+    min-width: 75px;
+    width: 20%;
+    height: 30%;
+    display: inline;
+}
+#display{
+    background-color:rgba(236, 25, 25, 0.616);
+    color:whitesmoke;
+    text-align: right;
+}
+#cardLeftDp{
+    background-color:rgba(0, 0, 255, 0.575);
+    color:yellow;
+    text-align: right;
+}
+.button{
+    max-width: 150px;
+    min-width: 75px;
+    width: 40%;
+    height: 60%;
+    margin-top: 2%;
+    font-size: larger;
+    transition: all 0.5s;
+    scale: 1;
+    border-radius: 8px;
+    display: inline;
+}
+.button:hover {
+    scale: 0.8;
+    background-color: rgba(128, 128, 128, 0.548);
+}
+#reload{
+    display: none;
+}
+#cardArea{
+    background-color:rgba(0, 0, 0, 0.24);
+    position: relative;
+    min-width: 420px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 1rem 1rem 1rem;
+
+}
+.empty{
+    display: none;
+    
+}
+.empty1{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(156, 152, 156);
+    margin: 15px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 90px 140px;
+}    
+.empty_2{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(156, 152, 156);
+    margin: 15px;
+}
+.backSide{
+    background-image: url(tiger.jpg) !important;
+}
+.img_1{
+    background-image:url(BugsBunny.png);
+}
+.img_2{
+    background-image: url(tweety.png);
+}
+.img_3{
+    background-image: url(tweety2.png);
+}
+.img_4{
+    background-image: url(tweety3.png);
+}
+.img_5{
+    background-image: url(tweety4.png);
+}
+.img_6{
+    background-image: url(ElmerFudd.png);
+}
+.img_7{
+    background-image: url(lolabunny.png);
+}
+.img_8{
+    background-image: url(coyote.png);
+}
+.img_9{
+    background-image: url(roadrunner.png);
+}
+.img_10{
+    background-image: url(sylvester.png);
+}
+.img_11{
+    background-image: url(sylvester2.png);
+}
+.img_12{
+    background-image: url(sylvester3.png);
+}
+.img_13{
+    background-image: url(sylvester4.png);
+}
+.img_14{
+    background-image: url(DaffyDuck.png);
+}
+.img_15{
+    background-image: url(PorkyPig.png);
+}
+.img_16{
+    background-image: url(YosemiteSam.png);
+}
+
+.img_17{
+    background-image: url(taz.png);
+}
+.gmover{
+    background-image: url(GameOver.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:612px;
+    height:408px;
+    display: flexbox;
+    opacity: 0.5;
+    margin: auto !important;
+}
+
+
+

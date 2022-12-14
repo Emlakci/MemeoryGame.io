@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="displayArea">
+        <p>Hatalı Tahmin Sayısı</p>
+        <input type="number" name="" id="display" class="input" disabled> <br>
+        <p>Kalan Kart Sayısı</p>
+        <input type="text" name="" id="cardLeftDp" class="input" disabled> <br>
+        <select name="GameLevel" class="input" id="gmLvl" onchange="createNewArray()">
+            <option value="0">Seviye Seç</option>
+            <option value="3">Seviye 1</option>
+            <option value="4">Seviye 2</option>
+            <option value="5">Seviye 3</option>
+            <option value="6">Seviye 4</option>
+            <option value="7">Seviye 5</option>
+            <option value="8">Seviye 6</option>
+            <option value="9">Seviye 7</option>
+            <option value="10">Seviye 8</option>
+        </select>
+        <button id="start" class="button" onclick="start()">Oyuna Başla</button>
+        <button id="reload" class="button" onclick="reload()">Yeniden Dağıt</button>
+        <h2>TEST YOUR MEMORY!!!</h2>
+    </div>
+    <div id="cardArea">
+        <div id="card_1" class="empty" onclick="pickUp(this)">1</div>
+        <div id="card_2" class="empty" onclick="pickUp(this)">2</div>
+        <div id="card_3" class="empty" onclick="pickUp(this)">3</div>
+        <div id="card_4" class="empty" onclick="pickUp(this)">4</div>
+        <div id="card_5" class="empty" onclick="pickUp(this)">5</div>
+        <div id="card_6" class="empty" onclick="pickUp(this)">6</div>
+        <div id="card_7" class="empty" onclick="pickUp(this)">7</div>
+        <div id="card_8" class="empty" onclick="pickUp(this)">8</div>
+        <div id="card_9" class="empty" onclick="pickUp(this)">9</div>
+        <div id="card_10" class="empty" onclick="pickUp(this)">10</div>
+        <div id="card_11" class="empty" onclick="pickUp(this)">11</div>
+        <div id="card_12" class="empty" onclick="pickUp(this)">12</div>
+        <div id="card_13" class="empty" onclick="pickUp(this)">13</div>
+        <div id="card_14" class="empty" onclick="pickUp(this)">14</div>
+        <div id="card_15" class="empty" onclick="pickUp(this)">15</div>
+        <div id="card_16" class="empty" onclick="pickUp(this)">16</div>
+        <div id="card_17" class="empty" onclick="pickUp(this)">17</div>
+        <div id="card_18" class="empty" onclick="pickUp(this)">18</div>
+        <div id="card_19" class="empty" onclick="pickUp(this)">19</div>
+        <div id="card_20" class="empty" onclick="pickUp(this)">20</div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>    
+    <script src="main.js"></script>
+</body>
+</html>
