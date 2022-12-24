@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600&family=Rubik+Wet+Paint&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -23,24 +24,74 @@ body{
     align-content: center;
     align-items: center;
 }
-p h2 {
-    display: inline;
+.errorMessage{
+    display: none;
+    font-family: 'DynaPuff', cursive;
+    border: 1px solid blue;
+    padding: 1rem;
+}
+.info{
+    padding: 1rem;
+    text-align:center;
+}
+.name{
+    padding: 1rem;
+    text-align: center;
+}
+.selectable{
+    padding: 0.5rem;
+    width: 25%;
+}
+.selectable select{
+    min-width: 20%;
+    max-width:fit-content;
+    height:fit-content;
+    margin: auto 3% auto auto;
+    padding: 1%;
+}
+.clock{
+    background-color: rgba(0, 0, 255, 0.404);
+    max-width: 30vw;
+    max-height: 50vh;
+    text-align: center;
+    margin-top: 1%;
+}
+.clock h5{
+    font-family: 'DynaPuff', cursive;
+}
+#timer{
+    max-width: 50%;
+    margin: 3% auto 3% auto;
+    padding: 1,5%;
+    background-color: darkgray;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'DynaPuff', cursive;
+}
+.red{
+    color:red;
+}
+.hide{
+    color:transparent;
+}
+.clock button{
+    margin: 0px auto 3% auto;
+    font-family: 'DynaPuff', cursive;
 }
 h2:hover{
     color: red;
     cursor:crosshair;
 }
-.input{
-    max-width: 150px;
+input{
+    max-width:50%;
     min-width: 75px;
-    width: 20%;
-    height: 30%;
-    display: inline;
+    border-bottom: 2px solid red;
 }
 #display{
     background-color:rgba(236, 25, 25, 0.616);
     color:whitesmoke;
     text-align: right;
+    margin-bottom: 3%;
 }
 #cardLeftDp{
     background-color:rgba(0, 0, 255, 0.575);
@@ -48,16 +99,15 @@ h2:hover{
     text-align: right;
 }
 .button{
-    max-width: 150px;
-    min-width: 75px;
-    width: 40%;
-    height: 60%;
-    margin-top: 2%;
+    max-width: 50%;
+    min-width:fit-content;
+    height:fit-content;
     font-size: larger;
+    padding: 1%;
     transition: all 0.5s;
     scale: 1;
     border-radius: 8px;
-    display: inline;
+    margin-top: 3%;
 }
 .button:hover {
     scale: 0.8;
@@ -79,7 +129,6 @@ h2:hover{
 }
 .empty{
     display: none;
-    
 }
 .empty1{
     display: flex;
@@ -164,6 +213,28 @@ h2:hover{
     opacity: 0.5;
     margin: auto !important;
 }
+.youWin{
+    background-image: url(youWin.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:612px;
+    height:408px;
+    display: flexbox;
+    opacity: 0.5;
+    margin: auto !important;
+}
 
-
-
+@media screen and (max-width:768px)
+{
+    .selectable, .name, .info, #cardArea, .clock{
+        display: none;
+    }  
+    #displayArea{
+        margin: auto 5rem auto 5rem;
+        background-color: rgba(255, 0, 0, 0.411);
+    }   
+    .errorMessage{
+        display: block;
+    }
+}
